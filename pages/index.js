@@ -1,61 +1,58 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>CIC Module</title>
+        <link rel="icon" href="/cic.png" />
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <h1 className="title">
+          <img src="/CIClogo.png" alt="CIC LOGO" className="logo" /> 
         </h1>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+        <Link href="module/sofia">
+          <a className="card">
+            <h3>Generate Report &rarr;</h3>
+            <p>New monthly data report</p>
           </a>
+        </Link>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+        <Link href="module/sofia">
+          <a className="card">
+            <h3>Update Report &rarr;</h3>
+            <p>Update records in CIC</p>
           </a>
+        </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+        <Link href="module/sofia">
+          <a className="card">
+            <h3>Generate Report &rarr;</h3>
+            <p>Monthly Report</p>
           </a>
+        </Link>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+        <Link href="module/sofia">
+          <a className="card">
+            <h3>Generate Report &rarr;</h3>
+            <p>Monthly Report</p>
           </a>
+        </Link>
         </div>
       </main>
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://gdfi.com.ph"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          Powered by GDFI ITD { ' ' }
+          <img src="/gdfi.jpg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
@@ -67,6 +64,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background: #ebf0f2;
         }
 
         main {
